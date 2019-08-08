@@ -22,7 +22,7 @@ class CreateBayarCicilansTable extends Migration
             $table->bigInteger('jumlah_cicilan');
             $table->bigInteger('cicilan_ke');
             $table->bigInteger('cicilan_sisake');
-            $table->bigInteger('cicilan_sisaharga');
+            $table->double('cicilan_sisaharga');
             $table->timestamps();
         });
     }

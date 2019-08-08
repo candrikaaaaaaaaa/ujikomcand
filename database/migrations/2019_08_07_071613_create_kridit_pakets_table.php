@@ -16,11 +16,11 @@ class CreateKriditPaketsTable extends Migration
         Schema::create('kridit_pakets', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('kode_paket');
-            $table->bigInteger('paket_hargacash');
-            $table->bigInteger('paket_uangmuka');
+            $table->double('paket_hargacash');
+            $table->double('paket_uangmuka');
             $table->bigInteger('paket_jumlahcicilan');
-            $table->bigInteger('paket_bunga');
-            $table->bigInteger('paket_nilaicicilan');
+            $table->double('paket_bunga');
+            $table->double('paket_nilaicicilan');
             $table->timestamps();
         });
     }
